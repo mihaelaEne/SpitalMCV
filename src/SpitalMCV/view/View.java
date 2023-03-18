@@ -66,7 +66,7 @@ public class View {
         System.out.println("Introduceti salonul in care se afla (1-9): ");
         char nrSalon = scanner.nextLine().charAt(0);
         System.out.println("Introduceti true,daca pacientul are COVID si false, daca pacientul nu are COVID: ");
-        boolean areBursa = Boolean.parseBoolean(scanner.nextLine());
+        boolean areCovid = Boolean.parseBoolean(scanner.nextLine());
 
 
         Pacient pacient = controllerPacient.findPacientByNumeSiPrenume(nume, prenume);
