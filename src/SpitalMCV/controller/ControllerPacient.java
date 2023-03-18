@@ -93,7 +93,6 @@ public class ControllerPacient {
     }
 
 
-
     public void addPacient(Pacient pacient) {
         this.pacienti.add(pacient);
     }
@@ -104,22 +103,22 @@ public class ControllerPacient {
     }
 
 
-    public void update(Pacient pacient){
+    public void update(Pacient pacient) {
 
 
-        Pacient deUpdatat=findPacientByNumeSiPrenume(pacient.nume,pacient.prenume);
+        Pacient deUpdatat = findPacientByNumeSiPrenume(pacient.nume, pacient.prenume);
 
-        if(pacient.id!=0){
-            deUpdatat.id=pacient.id;
+        if (pacient.id != 0) {
+            deUpdatat.id = pacient.id;
         }
 
-        if(pacient.afectiune!=null){
-            deUpdatat.afectiune=pacient.afectiune;
+        if (pacient.afectiune != null) {
+            deUpdatat.afectiune = pacient.afectiune;
         }
 
-        if(pacient.nrSalon!=0){
+        if (pacient.nrSalon != 0) {
 
-            deUpdatat.nrSalon=pacient.nrSalon;
+            deUpdatat.nrSalon = pacient.nrSalon;
         }
 
     }
